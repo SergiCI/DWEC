@@ -36,5 +36,9 @@ console.log(estudiantesAprobados.forEach(estudiantes => {
 
 //Incoherencias imprime mensaje
 estudiantes.forEach(estudiante => {
-    if(estudiantes.calificacion >= 5 && estudiante.aprobado)
+    if(estudiantes.calificacion >= 5 && estudiante.aprobado){
+        console.log("Es coherente")
+    }else{
+        console.log(`Incoherencia en el registro ${estudiantesAprobados}`)
+    }
 });
