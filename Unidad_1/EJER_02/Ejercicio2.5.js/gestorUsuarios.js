@@ -20,3 +20,14 @@ export function esMayorDeEdad(usuario) {
 }
 
 //Crea la funcion obtenerMayorDeEdad para que reciba un array de usuarios y utilizando el .filter
+export function obtenerMayorDeEdad(usuarios) {
+    return usuarios.filter(usuario => esMayorDeEdad(usuario))
+}
+
+//Crea la funcion calcularPromedioEdad que reciba un array de usuarios y usando un .reduce()
+export function calcularPromedioEdad(usuarios) {
+    const promedio = usuarios.reduce((total, usuario) => {
+        return total + usuario.edad
+    }, 0)
+    return promedio / usuarios.length
+}
