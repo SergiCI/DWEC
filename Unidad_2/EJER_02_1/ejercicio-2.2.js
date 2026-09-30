@@ -1,4 +1,3 @@
-// Definición del arreglo de objetos 'playlist'
 const playlist = [
   { titulo: "Bohemian Rhapsody", artista: "Queen", duracion: 354 },
   { titulo: "Hotel California", artista: "Eagles", duracion: 390 },
@@ -11,8 +10,7 @@ const playlist = [
   { titulo: "De Música Ligera", artista: "Soda Stereo", duracion: 212 },
   { titulo: "Beat It", artista: "Michael Jackson", duracion: 258 }
 ];
-
-// Recorrido de la playlist para imprimir título y artista de cada canción
-playlist.forEach((cancion) => {
-  console.log(`Título: ${cancion.titulo} | Artista: ${cancion.artista}`);
-});
+//Usamos un .filter para filtrar canciones de más de 180s
+const playlistMayores = playlist.filter((playlist) => playlist.duracion > 180)
+//Usamos un .map para mostrar las canciones que queremos
+playlistMayores.map(canciones => console.log(`La canción ${canciones.titulo} de ${canciones.artista} dura ${canciones.duracion} segundos`))
