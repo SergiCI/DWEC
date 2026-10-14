@@ -1,0 +1,1 @@
+const titulo1 = document.querySelector(".premium h2")

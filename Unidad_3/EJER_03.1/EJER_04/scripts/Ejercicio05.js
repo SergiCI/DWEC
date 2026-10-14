@@ -1,2 +1,2 @@
-const titulo = document.getElementById("titulo-principal")
-console.log(titulo.textContent)
+const formulario = document.getElementById("formulario-contacto")
+console.log(formulario)
