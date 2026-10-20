@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Manual del Acordeón de FAQ</title>
+    <style>
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs-container">
+    <h2>Sistema de Pestañas</h2>
+    
+    <!-- Div para los botones de las pestañas -->
+    <div class="botones-tabs">
+      <!-- 1. Asignamos un data-id que corresponde al id del div de contenido -->
+      <button class="tab-btn activo" data-id="pestana-1">Pestaña 1</button>
+      <button class="tab-btn" data-id="pestana-2">Pestaña 2</button>
+      <button class="tab-btn" data-id="pestana-3">Pestaña 3</button>
+    </div>
+
+    <!-- Div para el contenido con varios div (uno por pestaña) -->
+    <div class="contenido-tabs">
+      <div id="pestana-1" class="panel-tab">
+        <h3>Contenido de la Pestaña 1</h3>
+        <p>Esta es la información detallada correspondiente a la primera pestaña. Aquí puedes mostrar texto, imágenes o cualquier otro elemento HTML.</p>
+      </div>
+
+      <!-- Tienen la clase común 'panel-tab' y la clase 'oculto' inicial para las inactivos -->
+      <div id="pestana-2" class="panel-tab oculto">
+        <h3>Contenido de la Pestaña 2</h3>
+        <p>Bienvenido a la sección de la segunda pestaña. Este contenido permanece oculto hasta que haces clic en su botón correspondiente.</p>
+      </div>
+
+      <div id="pestana-3" class="panel-tab oculto">
+        <h3>Contenido de la Pestaña 3</h3>
+        <p>Estás visualizando el contenido de la tercera pestaña. ¡El sistema de navegación mediante atributos data-id funciona a la perfección!</p>
+      </div>
+    </div>
+  </div>
+    <script src="imagenes.js"></script>
+
+</body>
+
+</html>

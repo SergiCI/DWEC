@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Manual del Acordeón de FAQ</title>
+</head>
+
+<body>
+<div class="shop-container">
+    <!-- Productos Disponibles -->
+    <div class="seccion">
+      <h3>Productos</h3>
+      <ul id="lista-productos">
+        <!-- data-price almacena el precio numérico del producto -->
+        <li data-price="15.50">
+          <span>Camiseta - $15.50</span>
+          <button class="btn-añadir">Añadir al carrito</button>
+        </li>
+        <li data-price="45.00">
+          <span>Pantalón - $45.00</span>
+          <button class="btn-añadir">Añadir al carrito</button>
+        </li>
+        <li data-price="12.00">
+          <span>Gorra - $12.00</span>
+          <button class="btn-añadir">Añadir al carrito</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Carrito de Compras -->
+    <div class="seccion">
+      <h3>Tu Carrito</h3>
+      <ul id="lista-carrito">
+        <!-- Los elementos clonados aparecerán aquí -->
+      </ul>
+      
+      <div class="total-container">
+        Total: $<span id="total">0.00</span>
+      </div>
+    </div>
+  </div>
+    <script src="imagenes.js"></script>
+
+</body>
+
+</html>

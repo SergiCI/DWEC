@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Manual del Acordeón de FAQ</title>
+    <style>
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="faq-container">
+        <h1>Preguntas Frecuentes</h1>
+
+        <ul class="faq-list">
+            <li>
+                <h2 onclick="revelarRespuesta(this)">¿Cuáles son los métodos de pago aceptados?</h2>
+                <p class="oculto">Aceptamos tarjetas de crédito/débito (Visa, MasterCard), PayPal y transferencias
+                    bancarias directas.</p>
+            </li>
+            <li>
+                <h2 onclick="revelarRespuesta(this)">¿Cuánto tarda en llegar mi pedido?</h2>
+                <p class="oculto">El tiempo estimado de entrega es de 2 a 5 días hábiles dentro del territorio nacional.
+                </p>
+            </li>
+            <li>
+                <h2 onclick="revelarRespuesta(this)">¿Puedo solicitar una devolución?</h2>
+                <p class="oculto">Sí, dispones de 30 días naturales desde la recepción del producto para solicitar una
+                    devolución gratuita.</p>
+            </li>
+            <li>
+                <h2 onclick="revelarRespuesta(this)">¿Cómo me pongo en contacto con soporte?</h2>
+                <p class="oculto">Puedes escribirnos un correo a soporte@ejemplo.com o llamarnos al +34 900 123 456 en
+                    horario laboral.</p>
+            </li>
+        </ul>
+    </div>
+
+    <script src="imagenes.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="galeria">
+    <!-- Imagen Principal -->
+    <div id="contenedor-principal">
+      <img id="imagen-principal" src="img/hacer1.jpg" alt="Imagen Principal">
+    </div>
+
+    <!-- Contenedor de Miniaturas (4 imágenes) -->
+    <div class="miniaturas">
+      <img class="miniatura activa" src="img/hacer1.jpg" alt="Miniatura 1" onclick="seleccionarImagen(0)">
+      <img class="miniatura" src="img/hacer2.jpg" alt="Miniatura 2" onclick="seleccionarImagen(1)">
+      <img class="miniatura" src="img/hacer3.jpg" alt="Miniatura 3" onclick="seleccionarImagen(2)">
+      <img class="miniatura" src="img/hacer4.jpg" alt="Miniatura 4" onclick="seleccionarImagen(3)">
+    </div>
+  </div>
+  <script src="imagenes.js"></script>
+</body>
+</html>
